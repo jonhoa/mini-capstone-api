@@ -8,6 +8,6 @@
 
 
 #Create a loop to generate fake data
-20.times do
-testproduct = Product.create(name: "tsst ", price: "1223 ", description: " prot eudher dme", image_url: " feifj eirj")
-end
+# 20.times do
+testproduct2 = Product.create(name:Faker::Appliance.equipment , price: "1223 ", description: " prot eudher dme", image_url: " feifj eirj")
+# end
