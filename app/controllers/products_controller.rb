@@ -1,5 +1,11 @@
 class ProductsController < ApplicationController
-  def items
-    render json:{message: "yoda"}
+  def allitems
+    products = Product.all
+    render json: products.as_json
+  end
+  
+  def item
+    # products = Product.all
+    # render json: products.as_json
   end
 end
