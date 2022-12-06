@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+
+#Create a loop to generate fake data
+20.times do
+testproduct = Product.create(name: "tsst ", price: "1223 ", description: " prot eudher dme", image_url: " feifj eirj")
+end
