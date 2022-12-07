@@ -18,4 +18,14 @@ class ProductsController < ApplicationController
     product1.save
     render json: product1.as_json
   end
+
+  def update
+    # product1 = Product.new(
+    #   name: params[:input_name],
+    #   price: params[:input_price],
+    #   image_url: params[:input_image_url],
+    #   description: params[:input_description]
+    # )
+    render json: {message: "test"}
+  end
 end

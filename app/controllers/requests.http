@@ -6,10 +6,12 @@ GET http://localhost:3000/products/1.json
 ### Post
 POST http://localhost:3000/products.json
 Content-Type: application/json
-
     {
       "input_name": "Joypad",
       "input_price": 10,
       "input_image_url": "google",
       "input_description": "Used to control motion movements on gaming consoles"
     }
+
+### Update    
+PATCH http://localhost:3000/products/1.json
