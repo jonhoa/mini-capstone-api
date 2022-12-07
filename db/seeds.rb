@@ -8,6 +8,8 @@
 
 
 #Create a loop to generate fake data
-# 20.times do
-testproduct2 = Product.create(name:Faker::Appliance.equipment , price: "1223 ", description: " prot eudher dme", image_url: " feifj eirj")
-# end
+
+products = Product.new(name: "comb" , price: "1223 ", description: " prot eudher dme", image_url: " feifj eirj")
+products.save
+
+#faker error, need to fix syntax on line 12 
