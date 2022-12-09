@@ -1,15 +1,15 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
-
-
-#Create a loop to generate fake data
-
-products = Product.new(name: "comb" , price: "1223 ", description: " prot eudher dme", image_url: " feifj eirj")
-products.save
-
-#faker error, need to fix syntax on line 12 
+Product.create!([
+  {name: "Knife", price: "10.0", image_url: "google", description: "A sharp metallic blade", stock: nil},
+  {name: "Knife", price: "10.0", image_url: "google", description: "A sharp metallic blade", stock: nil},
+  {name: "Knife", price: "10.0", image_url: "google", description: "A sharp metallic blade", stock: nil},
+  {name: "Joypad", price: "10.0", image_url: "google", description: "Used to control motion movements on gaming consoles", stock: nil},
+  {name: "Joypad", price: "10.0", image_url: "google", description: "Used to control motion movements on gaming consoles", stock: nil},
+  {name: "Joypad", price: "10.0", image_url: "google", description: "Used to control motion movements on gaming consoles", stock: nil},
+  {name: "Joypad", price: "10.0", image_url: "google", description: "Used to control motion movements on gaming consoles", stock: nil},
+  {name: "Joypad", price: "10.0", image_url: "google", description: "Used to control motion movements on gaming consoles", stock: nil},
+  {name: "match box", price: "392.0", image_url: "google", description: "used to light fires", stock: 12},
+  {name: "Gun", price: "10.0", image_url: "google", description: "Used to cause harm", stock: nil},
+  {name: "Joypad", price: "10.0", image_url: "google", description: "Used to control motion movements on gaming consoles", stock: nil},
+  {name: "Pen", price: "10.0", image_url: "google", description: "Used to write stuff on gaming paper", stock: nil},
+  {name: "Knife", price: "10.0", image_url: "facebook", description: "A sharp metallic blade", stock: nil}
+])

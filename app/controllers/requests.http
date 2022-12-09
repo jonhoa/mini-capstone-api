@@ -1,20 +1,21 @@
-GET http://localhost:3000/products.json
+GET http://localhost:3000/products/8.json
 
 ### All
 GET http://localhost:3000/products/1.json
 
-### Post
+###Create
 POST http://localhost:3000/products.json
 Content-Type: application/json
+
     {
-      "input_name": "Joypad",
+      "input_name": "Pen",
       "input_price": 10,
       "input_image_url": "google",
-      "input_description": "Used to control motion movements on gaming consoles"
+      "input_description": "Used to write stuff on gaming paper"
     }
 
 ### Update    
-PATCH http://localhost:3000/products/1.json
+PATCH http://localhost:3000/products/8.json
 Content-Type: application/json
 
     {
@@ -25,4 +26,4 @@ Content-Type: application/json
     }
 
 ### Delete
-DELETE http://localhost:3000/products/2.json
+DELETE http://localhost:3000/products/6.json
