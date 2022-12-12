@@ -8,10 +8,10 @@ POST http://localhost:3000/products.json
 Content-Type: application/json
 
     {
-      "input_name": "Pen",
-      "input_price": 10,
-      "input_image_url": "google",
-      "input_description": "Used to write stuff on gaming paper"
+      "name": "",
+      "price": "",
+      "image_url": "google",
+      "description": "SEE"
     }
 
 ### Update    
@@ -19,11 +19,11 @@ PATCH http://localhost:3000/products/8.json
 Content-Type: application/json
 
     {
-      "name": "Gun",
-      "price": 10,
+      "name": "",
+      "price":"" ,
       "image_url": "google",
-      "description": "Used to cause harm"
-    }
+      "description": " "
+      }
 
 ### Delete
 DELETE http://localhost:3000/products/6.json
