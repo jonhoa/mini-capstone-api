@@ -16,4 +16,9 @@ class OrdersController < ApplicationController
     order = Order.find_by(id: params[:id])
     render json: order.as_json
   end
+
+  def index
+    order = Order.all
+    render json: order.as_json
+  end
 end
