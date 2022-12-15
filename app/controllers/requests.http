@@ -62,3 +62,16 @@ Content-Type: application/json
   "width": 640,
   "height": 480
 }
+
+###Orders Create
+POST http://localhost:3000/orders.json
+Content-Type: application/json
+
+{
+  "user_id": 3,
+  "product_id": 2, 
+  "quantity": 1, 
+  "subtotal": 14.03,
+  "tax": 2.14, 
+  "total": 16.17
+}
