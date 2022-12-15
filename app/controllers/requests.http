@@ -47,7 +47,7 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "test@test.com",
+  "email": "admin1@test.com",
   "password": "password"
 }
 
@@ -64,7 +64,7 @@ Content-Type: application/json
 
 ###Orders Create
 POST http://localhost:3000/orders.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NzEyMjE4OTR9.53G2qkUQDVbr5PpRb6Uc9Ku7NvQ1f5yX1Niad58nw6A
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NzEyMjMwODV9.J_fKXSXhNM1oespBd4rHzyAwCAvjkuW6XZ9mSQqC3rc
 Content-Type: application/json
 
 {
