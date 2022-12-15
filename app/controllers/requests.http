@@ -2,13 +2,12 @@ GET http://localhost:3000/products/8.json
 
 ### All
 GET http://localhost:3000/products/1.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NzExMzE1ODR9.-CtnRJJf4hKLCT3fAhzPdo33Fsbv3mZE23j62DD9r1Q
 Content-Type: application/json
 
 ###Create
 POST http://localhost:3000/products.json
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NzExMzE1ODR9.-CtnRJJf4hKLCT3fAhzPdo33Fsbv3mZE23j62DD9r1Q
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NzEyMjE4OTR9.53G2qkUQDVbr5PpRb6Uc9Ku7NvQ1f5yX1Niad58nw6A
 
 
     {
@@ -52,32 +51,33 @@ Content-Type: application/json
   "password": "password"
 }
 
-### Photos create
-POST http://localhost:3000/photos.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NzExMzE1ODR9.-CtnRJJf4hKLCT3fAhzPdo33Fsbv3mZE23j62DD9r1Q
-Content-Type: application/json
+# ### Photos create
+# POST http://localhost:3000/photos.json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NzExMzE1ODR9.-CtnRJJf4hKLCT3fAhzPdo33Fsbv3mZE23j62DD9r1Q
+# Content-Type: application/json
 
-{
-  "name": "Test name",
-  "width": 640,
-  "height": 480
-}
+# {
+#   "name": "Test name",
+#   "width": 640,
+#   "height": 480
+# }
 
 ###Orders Create
 POST http://localhost:3000/orders.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NzEyMjE4OTR9.53G2qkUQDVbr5PpRb6Uc9Ku7NvQ1f5yX1Niad58nw6A
 Content-Type: application/json
 
 {
-  "user_id": 3,
   "product_id": 2, 
-  "quantity": 1, 
-  "subtotal": 14.03,
-  "tax": 2.14, 
-  "total": 16.17
+  "quantity": 3, 
+  "subtotal": 16.03,
+  "tax": 1.44, 
+  "total": 18.47
 }
 
 ###SHOW
 GET http://localhost:3000/orders/1.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NzEyMjE4OTR9.53G2qkUQDVbr5PpRb6Uc9Ku7NvQ1f5yX1Niad58nw6A
 
 ###ALL/INDEX
 GET http://localhost:3000/orders.json
