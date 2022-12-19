@@ -18,7 +18,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NzEyMjE4O
     }
 
 ### Update    
-PATCH http://localhost:3000/products/8.json
+PATCH http://localhost:3000/products/.json
 Content-Type: application/json
 
     {
@@ -29,7 +29,7 @@ Content-Type: application/json
       }
 
 ### Delete
-DELETE http://localhost:3000/products/6.json
+DELETE http://localhost:3000/products/3.json
 
 ### Users create (signup)
 POST http://localhost:3000/users.json
