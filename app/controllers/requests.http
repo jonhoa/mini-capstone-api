@@ -91,3 +91,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NzE2NDQ3N
   "product_id": 1,
   "quantity": 2
 }
+
+### index carted products
+GET http://localhost:3000/cart.json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NzE2NDQ3NTN9.xHOF-kkz18-iYRmaT0mNcEQBK0zMEA0xxl9NpS2mZbk
