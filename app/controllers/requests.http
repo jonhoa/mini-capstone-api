@@ -84,12 +84,10 @@ GET http://localhost:3000/orders.json
 
 ###Create carted products
 POST http://localhost:3000/cart.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NzE2NDQ3NTN9.xHOF-kkz18-iYRmaT0mNcEQBK0zMEA0xxl9NpS2mZbk
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NzE2NDQ3NTN9.xHOF-kkz18-iYRmaT0mNcEQBK0zMEA0xxl9NpS2mZbk
 
 {
-  "product_id": 2,
-  "quantity": 3,
-  "status": "on transit",
-  "order_id": 101
+  "product_id": 1,
+  "quantity": 2
 }
