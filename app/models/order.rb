@@ -1,3 +1,5 @@
 class Order < ApplicationRecord
-  belongs_to :users
+  has_many :users
+  belongs_to :carted_products
+
 end

@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
   def index
-    render json: {message: "test"}
+    product = Product.all
+    render json: product.as_json
   end
 
   def show
@@ -13,11 +14,12 @@ class ProductsController < ApplicationController
       name: params[:name],
       price: params[:price],
       image_url: params[:image_url],
-      description: params[:description]
+      description: params[:description],
+      supplier_id: params[:supplier_id]
     )
 
     if product1.save
-    render json: product1.as_json
+      render json: product1.as_json
     else
       render json: {error: product1.errors.full_messages}
     end

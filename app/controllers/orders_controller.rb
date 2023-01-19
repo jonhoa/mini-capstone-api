@@ -1,11 +1,8 @@
 class OrdersController < ApplicationController
-  before_action :authenticate_admin
 
   def create
     order = Order.create(
-      user_id: params[:user_id],
-      product_id: params[:product_id] , 
-      quantity: params[:quantity], 
+      user_id: current_user.id,
       subtotal: params[:subtotal], 
       tax: params[:tax], 
       total: params[:total]
@@ -15,12 +12,12 @@ class OrdersController < ApplicationController
   end
 
   def show
-    order = Order.find_by(id: params[:id])
+    order = Order.where(user_id: current_user.id, status: "Carted")
     render json: order.as_json
   end
 
   def index
-    order = Order.all
+    order = Order.where(user_id: current_user.id, order_id: 0)
     render json: order.as_json
   end
 end
