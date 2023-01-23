@@ -11,11 +11,11 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NzQyNDE2M
 
 
     {
-      "name": "Speaker1",
-      "price": "45",
+      "name": "Microphone",
+      "price": "42",
       "image_url": "google",
-      "description": "Speaker made by JBL",
-      "supplier_id": 2
+      "description": "Microphone made by Philips",
+      "supplier_id": 1
     }
 
 ### Update    
